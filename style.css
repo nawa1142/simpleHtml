@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun&display=swap');
+
+/*---ฟุตเตอร์ และ โลโก้---*/
+
+footer{
+    background-color: black;
+    opacity: 0.9;
+    width: 100%;
+    height: 20vh;    
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+}
+.footer-box{
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 3vh;
+}
+.contact{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    line-height: 1;
+}
+.contact p, .contact a{    
+    color: gray;
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 5px;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 10px;
+}
+nav a{
+    text-decoration: none;
+    color: gray;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.footer-box a:hover{
+    text-decoration: underline;
+}
+.logo {
+    text-decoration: none;
+    display: inline-block;
+}
+.logo h1{
+    -webkit-text-stroke: 0.5px;
+    -webkit-text-stroke-color: black;
+    color:red;
+    font-size: 60px;
+    margin-left: 20px;
+    margin-top: 10px;
+    line-height: 1;
+    font-family: fantasy;
+}
+.logo:hover{
+    text-decoration: none;
+}
+
+/*---หน้าล๊อคอิน---*/ 
+
+#box1-login{
+    background-color: rgb(0, 0, 0,0.8);
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-size: 2.5vh;    
+    width: 400px;
+    border-radius: 10px;
+}
+#box1-login h1{
+    font-family: 'Sarabun', sans-serif;    
+}
+#box2-login{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+#box2-login :hover{
+    box-shadow: 0px 0px 15px gray;
+}
+#box2-login input{    
+    background-color:grey;
+}
+.email-pass-area{
+    border-radius: 10px;
+    border: none;    
+    width: 100%;
+    height: 3rem;  
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+}
+#box3-login{
+    margin: 0 auto;
+    padding: 0;
+    width: 80%;
+}
+.login-button{
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    height: 3rem;  
+    margin: 0 auto;   
+    margin-top: 10px;
+   
+}
+.login-button:hover {
+    box-shadow: 0px 0px 10px red;
+}
+#box4-login{
+    width: 20rem;
+    height: 2rem;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5vh;
+    color: rgb(184, 181, 181);
+}
+.checkbox{
+    display: inline-flex;
+    align-items: center;
+}
+.checkbox input[type="checkbox"]{
+    margin-right: 5px;
+}
+.helplink{
+    display: flex;
+    align-items: center;
+}
+.helplink a{
+    color: rgb(184, 181, 181);
+}
+.helplink a:hover{
+    text-decoration: underline;
+}
+#box5-login{
+    width: 20rem;
+    height: 2rem;
+    margin-top: 5px;
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: left;
+    font-size: 1.5vh;
+    color: gray;
+}
+.invite{
+    margin-right: 5px;
+}
+#box5-login a{
+    color: white;
+}
+#box5-login a:hover{
+    text-decoration: underline;
+}
+
+/*---หน้าสมัครสมาชิก---*/
+
+#box1-regis{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0.8);
+    border-radius: 20px;
+    height: 33rem;
+    width: 30rem;
+    font-family: 'Sarabun', sans-serif;
+}
+#box2-regis{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#box3-regis {
+    width: 80%;    
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+#box3-regis 
+    input[type="email"],
+    input[type="password"],
+    input[type="name"],
+    textarea{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.important-text::after{
+    content: "*";
+    color:red;
+    padding-left: 2px;
+    font-size: small;
+}
+#box3-regis
+    input,
+    input::placeholder,
+    textarea,
+    select{
+    color: whitesmoke;
+    background-color: gray;
+    text-align: center;
+    border: none;
+    height: 1.75rem;
+    margin-top: 5px;
+}
+#box3-regis 
+    input:hover,
+    select:hover,
+    textarea:hover{
+    box-shadow: 0px 0px 10px rgb(167, 158, 158);
+    transition: 0.3s;
+}
+#box4-regis{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: small;
+} 
+#box5-regis{
+    margin: 0 auto;
+}
+.button{
+    background-color: red;
+    border-radius: 5px;
+    border: none;    
+    margin: 0 auto ;
+    margin-top: 4vh;
+    width: 80px;
+    height: 4.5vh;
+    color: whitesmoke;
+    font-size: medium;
+}
+.button:hover{
+    box-shadow: 0px 0px 10px red;
+    transition: 0.3s;
+}
+
+/*--------หน้าแนะนำหนัง---------*/
+
+#box1-recommend{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 90vw;
+    border: red solid;
+}
+.box2-recommend{
+    margin: 0;
+    padding: 0;
+    width: 50vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(201, 127, 31);
+}
+.box2-recommend a{
+    text-decoration: none;
+    color: whitesmoke;
+    text-align: center;
+}
+
+/*-----index------*/
+
+.box-login-regis{
+    display: flex;
+    transform: translate(0,-15px);
+}
+.box-login-regis div{    
+    background-color: red;    
+    width: 7rem;
+    height: 2rem;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    margin-right: 20px;
+}
+.box-login-regis div a{
+    text-decoration: none;
+    color: white;
+}
+.box-login-regis div:hover{
+    box-shadow: 0px 0px 20px black;
+}
+.box{
+    background:  rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+.text-grey {
+    color: rgb(212, 212, 212);
+}
+#introduce{
+    display: flex;
+    flex-direction: column;
+    min-width: min-content;
+    min-height: min-content; 
+    width: 60%;    
+    font-size: 2vw; 
+    float: left;   
+    margin-left: 10vw;
+    margin-top: 1vh;
+}
+#side-bar{   
+    border: none;
+    font-size: .5em;
+    display: inline-block;
+    position: fixed;
+    right: 0;
+    bottom: 25vh;
+    width: 5rem;
+    text-align: left;
+}
+#video-box{
+    display: flex;
+    flex-direction: column;
+    margin: 5vh 10vw 5vh 10vw;
+    max-width: 720px;
+    margin-top: 5vh;
+    max-height: 360px;
+}

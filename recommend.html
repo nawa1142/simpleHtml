@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image" href="image/titlebar-logo.jpg">
+    <title>หนังแนะนำ</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+            min-height: 100vh;
+            background-image: url(image/bg2.jpg);            
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;            
+            display: flex;
+            flex-direction: column;
+        }
+        body::after{
+            content: "";               
+            z-index: -1;                               
+            position: fixed;                
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            opacity: 0.7;
+            background-color: black;
+        }
+        header{
+            top: 0;
+            left: 0;
+            margin-bottom: 5%;                
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+        main{
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;      
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="index.html" class="logo"><h1 class="logo">NETPLIX</h1></a>
+        </div>
+    </header>
+    <main id="box1-recommend">
+        <div class="box2-recommend">            
+            <a href="new movie/tide.html"><h1>Tide คลื่นยักษ์ถล่มบก</h1></a>
+        </div>
+        <div class="box2-recommend">            
+            <a href="new movie/yaiba.html"><h1>Kimitsu no Yaiba</h1></a>
+        </div>        
+    </main>        
+    <footer>
+        <article class="footer-box">
+            <div class="contact">
+                <p>หากมีคำถามโทร</p>
+                <a href="tel:1911">191</a>                
+            </div>
+            <nav>
+                <a href="https://help.netflix.com/support/412">คำถามพบประจำ</a>
+                <a href="https://help.netflix.com/">ศูนย์ช่วยด้วย</a>
+                <a href="https://help.netflix.com/legal/termsofuse">ข้อกำหนด</a>
+                <a href="https://help.netflix.com/legal/privacy">ความเป็นส่วนตัว</a>
+                <a href="https://www.netflix.com/th/login?nextpage=https%3A%2F%2Fwww.netflix.com%2Fbrowse#">คุ้กกี้อบใหม่ๆ</a>
+                <a href="recommend.html">แนะนำหนัง</a>
+            </nav> 
+        </article>
+    </footer> 
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="icon" type="image" href="image/titlebar-logo.jpg">
+          <link rel="stylesheet" href="style.css">
+          <title>สมัครสมาชิก</title>
+          <style>
+               *{
+                box-sizing: border-box;
+               }
+               body{
+                    color: white;
+                    position: absolute;              
+                    width: 100%;
+                    height: 100%;
+                    background-image: url(https://images3.alphacoders.com/114/1142445.png);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-attachment: fixed;
+                    margin: 0;
+                    padding: 0;
+                    min-height: 100%;
+               }
+               body::after{
+                    content: "";               
+                    z-index: -1;                               
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    width: 100%;
+                    height: 100%;
+                    margin: 0;
+                    padding: 0;
+                    opacity: 0.7;
+                    background-color: black;
+               }
+               header{
+                    top: 0;
+                    left: 0;
+                    margin-bottom: 5%;                
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+               }               
+               main{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+               }
+               footer{
+                    margin: 0;
+                    padding: 0;
+                    position: absolute;
+               }
+               
+          </style>   
+     </head>
+     <body>
+          <header>
+               <div>
+                   <a href="index.html" class="logo"><h1 class="logo">NETPLIX</h1></a>
+               </div>       
+          </header>  
+          <main>
+               <article id="box1-regis">
+                    <h1>สมัครสมาชิก</h1>
+                    <form id="box2-regis">
+                         <div id="box3-regis">
+                              <label for="email" class="important-text">E-mail</label>
+                              <input type="email" name="email" placeholder="ป้อนอีเมลของท่าน" required>
+                              <label for="password" class="important-text">Password</label>
+                              <input type="password" name="password" placeholder="ป้อนพาสเวิร์คที่ท่านต้องการ" required>
+                              <label for="name" class="important-text">ชื่อ - นามสกุล</label>
+                              <input type="name" name="name" placeholder="ป้อนชื่อของท่าน" required>
+                              <label for="">ที่อยู่</label>
+                              <textarea name="address" id="" ></textarea>
+                              <label for="sex">เพศ</label>
+                              <select name="sex" id="">
+                                   <option value="ชาย">ชาย</option>
+                                   <option value="หญิง">หญิง</option>
+                                   <option value="ไม่ระบุ" selected>ไม่ระบุ</option>
+                              </select>
+                         </div>
+                         <div id="box4-regis">
+                              <label for="favtype" >แนวหนังที่ชอบ</label>
+                              <input type="checkbox" name="fav">แอคชั่น 
+                              <input type="checkbox" name="fav">สยองขวัญ
+                              <input type="checkbox" name="fav">คอมเมดี้
+                              <input type="checkbox" name="fav">สืบสวน          
+                         </div>
+                         <div id="box5-regis">
+                              <input type="submit" value="บันทึก" class="button">
+                              <input type="reset" value="ล้างค่า" class="button">
+                         </div>
+                    </form>
+               </article>
+          </main>     
+          <footer>
+               <article class="footer-box">
+               <article class="contact">
+                    <p>หากมีคำถามโทร</p>
+                    <a href="tel:1901">191</a>
+               </article>
+               <nav>
+                    <a href="https://help.netflix.com/support/412">คำถามพบประจำ</a>
+                    <a href="https://help.netflix.com/">ศูนย์ช่วยด้วย</a>
+                    <a href="https://help.netflix.com/legal/termsofuse">ข้อกำหนด</a>
+                    <a href="https://help.netflix.com/legal/privacy">ความเป็นส่วนตัว</a>
+                    <a href="https://www.netflix.com/th/login?nextpage=https%3A%2F%2Fwww.netflix.com%2Fbrowse#">คุ้กกี้อบใหม่ๆ</a>
+                    <a href="recommend.html">แนะนำหนัง</a>
+               </nav> 
+               </article>
+          </footer>
+     </body>
+</html>

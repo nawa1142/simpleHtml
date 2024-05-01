@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tideฝูงคลื่นถล่มบก</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            color: white;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url(https://t1.blockdit.com/photos/2022/12/6396f425262d3f0eca1c1461.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            min-height: 100%;
+        }
+
+        body::after {
+            content: "";
+            z-index: -1;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            opacity: 0.7;
+            background-color: black;
+        }
+
+        header {
+            top: 0;
+            left: 0;
+            margin-bottom: 5%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex: 1;
+            margin-bottom: 20vh;
+            padding-right: 5vw;
+        }
+        .card {
+            position: static;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            flex: 1;
+        }
+        .card-img{
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div card-img>
+            <img src="../image/tide.png" alt="" width="480px" height="240px">
+        </div>
+        <div class="card-bod">
+            <h1>Tide คลื่นยักษ์ถล่มบก</h1>
+            <p>
+            <h3>เรื่องย่อ</h3>คลื่นซัดมาแล้วทรายก็เลยเปียก</p>
+            <hr>
+        </div>
+    </div>
+    <a href="../index.html"><button type="button">กลับสู่หน้าหลัก</button></a>
+
+</body>
+
+</html>

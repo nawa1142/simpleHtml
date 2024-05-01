@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <link rel="icon" href="image/titlebar-logo.jpg" type="logo-icon">
+        <link rel="stylesheet" href="style.css">
+        <title>Netplix</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            a{
+                text-decoration: none;
+            }
+            a:hover{
+                text-decoration: none;
+            }    
+            body{
+                color: white;              
+                width: 100%;                
+                height: 100%;
+                background: url(image/bg.jpg);
+                background-attachment: fixed;
+                margin: 0;
+                padding: 0;
+                min-height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+            }
+            body::after{
+                content: "";               
+                z-index: -1;                               
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                opacity: 0.7;
+                background-color: black;
+            }
+            header{
+                top: 0;
+                left: 0;
+                margin-bottom: 5%;
+            }
+            main{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            footer{
+                margin: 0;
+                padding: 0;
+                position: absolute;
+            }
+        </style>
+    </head>
+    <body>
+        <header >
+            <div class="logo">
+                <a href="index.html" ><h1 class="logo">NETPLIX</h1></a>
+            </div>
+        </header>
+        <main>
+            <article id="box1-login">
+                <h1>เข้าสู่ระบบ</h1>
+                <div id="box2-login">
+                    <input type="email" name="email" placeholder="E-mail or Telephone number" required class="email-pass-area">
+                    <input type="password" name="password" placeholder="Enter your password" required class="email-pass-area">
+                </div>
+                <div id="box3-login">
+                    <button type="submit" class="login-button" onclick="login()">เข้าสู่ระบบ</button>
+                </div>
+                <div id="box4-login">
+                    <label class="checkbox">                        
+                        <input type="checkbox" name="จดจำข้อมูล">
+                        <span>จดจำข้อมูลของฉัน</span>
+                    </label>
+                    <div class="helplink">
+                        <a href="https://www.netflix.com/LoginHelp" >ต้องการความช่วยเหลือ?</a>
+                    </div>
+                </div>                
+                <div id="box5-login">
+                    <div class="invite">ยังไม่มียูสเซอร์หรอ ?</div>                    
+                    <a href="regitster.html">กดสมัครลงทะเบียน !</a>                    
+                </div>
+            </article>
+        </main>
+        <footer>
+            <article class="footer-box">
+                <article class="contact">
+                    <p>หากมีคำถามโทร</p>
+                    <a href="tel:1911">191</a>                
+                </article>
+                <nav>
+                    <a href="https://help.netflix.com/support/412">คำถามพบประจำ</a>
+                    <a href="https://help.netflix.com/">ศูนย์ช่วยด้วย</a>
+                    <a href="https://help.netflix.com/legal/termsofuse">ข้อกำหนด</a>
+                    <a href="https://help.netflix.com/legal/privacy">ความเป็นส่วนตัว</a>
+                    <a href="https://www.netflix.com/th/login?nextpage=https%3A%2F%2Fwww.netflix.com%2Fbrowse#">คุ้กกี้อบใหม่ๆ</a>
+                    <a href="recommend.html">แนะนำหนัง</a>
+                </nav> 
+            </article>
+        </footer>
+    </body>
+</html>
